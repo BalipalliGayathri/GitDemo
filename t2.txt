@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-welcome 
-MSS
-=======
-welcome
->>>>>>> origin
