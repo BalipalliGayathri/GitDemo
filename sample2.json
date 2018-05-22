@@ -527,9 +527,8 @@
           }
         ]
       }
-    }
-	
-	"TaskDefinition":{
+    },
+   "TaskDefinition":{
         "Type": "AWS::ECS::TaskDefinition",
         "Properties":{
             "ContainerDefinitions":{
@@ -542,7 +541,7 @@
 		     },
                   "LogConfiguration":{
                     "LogDriver": "awslogs"
-					},
+		   },
                     "Options":{
                         "awslogs-group": "!Ref AWS::StackName",
                         "awslogs-region": "!Ref AWS::Region"
