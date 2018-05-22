@@ -111,7 +111,7 @@
     "EcsCluster" : {
       "Type" : "String",
       "Description" : "ECS Cluster Name",
-      "Default" : "Testing-G1"
+      "Default" : "Testing-G3"
     }
   },
   "Conditions": {
@@ -528,29 +528,29 @@
         ]
       }
     }
-	
-	"TaskDefinition":{
+  },
+  "TaskDefinition":{
         "Type": "AWS::ECS::TaskDefinition",
         "Properties":{
             "ContainerDefinitions":{
-                - "Name": "product-service",
+                 "Name": "product-service",
                   "Essential": "true",
-                  "Image": "docker.io/",
+                  "Image": "docker.io/saiganesh/nginx",
                   "Memory": "128",
                   "PortMappings":{
-                    - "ContainerPort": "8001"
-					},
+                    "ContainerPort": "80"
+		  },
                   "LogConfiguration":{
                     "LogDriver": "awslogs"
-					},
+		  },
                     "Options":{
-                        "awslogs-group": "!Ref AWS::StackName",
-                        "awslogs-region": "!Ref AWS::Region"
-						}
-			}
-		}
-    }
-  },
+                        "awslogs-group": "${AWS::StackName}",
+                        "awslogs-region": "${AWS::Region}"
+		       },
+                   "on_failure": "DO_NOTHING|ROLLBACK|DELETE"
+		   }
+	}
+    },
   "Outputs": {
     "VpcId": {
       "Description": "The VPC ID of the VPC",
