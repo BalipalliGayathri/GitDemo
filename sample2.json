@@ -529,7 +529,7 @@
       }
     }
   },
-   "TaskDefinition":{
+  "TaskDefinition":{
         "Type": "AWS::ECS::TaskDefinition",
         "Properties":{
             "ContainerDefinitions":{
@@ -539,15 +539,15 @@
                   "Memory": "128",
                   "PortMappings":{
                     "ContainerPort": "80"
-		     },
+		  },
                   "LogConfiguration":{
                     "LogDriver": "awslogs"
-		   },
+		  },
                     "Options":{
                         "awslogs-group": "${AWS::StackName}",
                         "awslogs-region": "${AWS::Region}"
 		       },
-                   "on_failure": "'DO_NOTHING'|'ROLLBACK'|'DELETE'"
+                   "on_failure": "DO_NOTHING|ROLLBACK|DELETE"
 		   }
 	}
     },
