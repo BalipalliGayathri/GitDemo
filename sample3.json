@@ -592,7 +592,7 @@
 "revision": 3,
 "status": "ACTIVE",
 "volumes": []
-} 
+},
   "Outputs": {
     "VpcId": {
       "Description": "The VPC ID of the VPC",
