@@ -896,7 +896,7 @@
         "DisplayName": "Empire Events"
       }
     },
-		
+
   "Outputs": {
     "Subnets": {
       "Description": "The subnets created",
@@ -957,4 +957,5 @@
       "Value": { "Ref": "CustomResourcesQueue" }
     }
   }
+}
 }
