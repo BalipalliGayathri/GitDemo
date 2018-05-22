@@ -111,7 +111,7 @@
     "EcsCluster" : {
       "Type" : "String",
       "Description" : "ECS Cluster Name",
-      "Default" : "Testing-G2"
+      "Default" : "Testing-G3"
     }
   },
   "Conditions": {
@@ -545,7 +545,8 @@
                     "Options":{
                         "awslogs-group": "${AWS::StackName}",
                         "awslogs-region": "${AWS::Region}"
-		       }
+		       },
+                   "on_failure": "'DO_NOTHING'|'ROLLBACK'|'DELETE'"
 		   }
 	}
     }
