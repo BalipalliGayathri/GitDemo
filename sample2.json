@@ -543,11 +543,11 @@
                     "LogDriver": "awslogs"
 		   },
                     "Options":{
-                        "awslogs-group": "!Ref AWS::StackName",
-                        "awslogs-region": "!Ref AWS::Region"
-						}
-			}
-		}
+                        "awslogs-group": "${AWS::StackName}",
+                        "awslogs-region": "${AWS::Region}"
+		       }
+		   }
+	}
     }
   },
   "Outputs": {
