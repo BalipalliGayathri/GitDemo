@@ -30,7 +30,7 @@
         "DockerRegistry": { "default": "balipalligayathri/warsdemo" },
         "DesiredCapacity": { "default": "3" },
         "AmiId": { "default": "ami-40286957" },
-        "AvailabilityZones": { "default": "us-east-1" },
+        "AvailabilityZones": { "default": "Availability zones" },
         "InstanceType": { "default": "Instance type" }
       }
     }
@@ -98,7 +98,7 @@
     "AvailabilityZones": {
       "Type": "List<AWS::EC2::AvailabilityZone::Name>",
       "Description": "Comma delimited list of availability zones. MAX 2",
-      "Default": "us-east-1a"
+      "Default": "us-east-1a,us-east-1b"
     },
     "LaunchEmpire": {
       "Type": "String",
@@ -282,7 +282,7 @@
         ],
         "Subnets": [
           { "Ref": "PubSubnetAz1"},
-          { "Ref": "PubSubnetAz2"},
+          { "Ref": "PubSubnetAz2"}
         ],
         "CrossZone": "true",
         "Listeners": [
