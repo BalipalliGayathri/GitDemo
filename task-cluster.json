@@ -360,32 +360,6 @@
         }
       }
     },
-
-    "DockerPolicy": {
-      "Type": "AWS::IAM::Policy",
-      "Properties": {
-        "PolicyName": "docker-cloudwatch-logs",
-        "Roles": [ { "Ref": "InstanceRole" } ],
-        "PolicyDocument": {
-          "Version": "2012-10-17",
-          "Statement": [
-            {
-              "Effect": "Allow",
-              "Action": [
-                "logs:CreateLogStream",
-                "logs:PutLogEvents"
-              ],
-              "Resource": [
-                { "Fn::Join": ["", ["arn:aws:logs:*:*:log-group:", { "Ref": "ApplicationLogGroup" }, ":log-stream:*"]] },
-                { "Fn::Join": ["", ["arn:aws:logs:*:*:log-group:", { "Ref": "DaemonLogGroup" }, ":log-stream:*"]] },
-                { "Fn::Join": ["", ["arn:aws:logs:*:*:log-group:", { "Ref": "PostgresLogGroup" }, ":log-stream:*"]] }
-              ]
-            }
-          ]
-        }
-      }
-    },
-
     "EmpireRole": {
       "Type": "AWS::IAM::Role",
       "Properties": {
