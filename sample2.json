@@ -527,7 +527,8 @@
           }
         ]
       }
-    },
+    }
+  },
    "TaskDefinition":{
         "Type": "AWS::ECS::TaskDefinition",
         "Properties":{
@@ -549,8 +550,7 @@
                    "on_failure": "'DO_NOTHING'|'ROLLBACK'|'DELETE'"
 		   }
 	}
-    }
-  },
+    },
   "Outputs": {
     "VpcId": {
       "Description": "The VPC ID of the VPC",
