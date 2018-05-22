@@ -533,13 +533,13 @@
         "Type": "AWS::ECS::TaskDefinition",
         "Properties":{
             "ContainerDefinitions":{
-                - "Name": "product-service",
+                 "Name": "product-service",
                   "Essential": "true",
-                  "Image": "docker.io/",
+                  "Image": "docker.io/saiganesh/nginx",
                   "Memory": "128",
                   "PortMappings":{
-                    - "ContainerPort": "8001"
-					},
+                    "ContainerPort": "80"
+		     },
                   "LogConfiguration":{
                     "LogDriver": "awslogs"
 					},
