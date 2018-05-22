@@ -98,7 +98,7 @@
     "AvailabilityZones": {
       "Type": "List<AWS::EC2::AvailabilityZone::Name>",
       "Description": "Comma delimited list of availability zones. MAX 2",
-      "Default": "us-east-1a,us-east-1b"
+      "Default": "us-east-1a"
     },
     "LaunchEmpire": {
       "Type": "String",
