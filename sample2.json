@@ -111,7 +111,7 @@
     "EcsCluster" : {
       "Type" : "String",
       "Description" : "ECS Cluster Name",
-      "Default" : "Testing-G1"
+      "Default" : "Testing-G2"
     }
   },
   "Conditions": {
