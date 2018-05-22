@@ -281,8 +281,8 @@
           { "Ref": "InstanceSecurityGroup" }
         ],
         "Subnets": [
-          { "Ref": "PubSubnetAz1","AvailabilityZone"},
-          { "Ref": "PubSubnetAz2","AvailabilityZone"}
+          { "Ref": "PubSubnetAz1"},
+          { "Ref": "PubSubnetAz2"},
         ],
         "CrossZone": "true",
         "Listeners": [
