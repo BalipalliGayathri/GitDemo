@@ -896,31 +896,7 @@
         "DisplayName": "Empire Events"
       }
     },
-
-    "ApplicationLogGroup": {
-      "Type": "AWS::Logs::LogGroup",
-      "Condition": "CloudWatchLogs",
-      "Properties": {
-        "RetentionInDays": 7
-      }
-    },
-
-    "PostgresLogGroup": {
-      "Type": "AWS::Logs::LogGroup",
-      "Condition": "CloudWatchLogs",
-      "Properties": {
-        "RetentionInDays": 7
-      }
-    },
-
-    "DaemonLogGroup": {
-      "Type": "AWS::Logs::LogGroup",
-      "Condition": "CloudWatchLogs",
-      "Properties": {
-        "RetentionInDays": 7
-      }
-    },
-
+	
     "CustomResourcesTopic": {
       "Type": "AWS::SNS::Topic",
       "Properties": {
