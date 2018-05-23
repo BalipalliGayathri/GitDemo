@@ -301,9 +301,9 @@
         ],
         "HealthCheck": {
           "Target": "HTTP:8080/health",
-          "HealthyThreshold": "10",
+          "HealthyThreshold": "30",
           "UnhealthyThreshold": "2",
-          "Interval": "30",
+          "Interval": "60",
           "Timeout": "20"
         },
         "ConnectionSettings": {
