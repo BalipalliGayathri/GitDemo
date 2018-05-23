@@ -303,7 +303,7 @@
           "Target": "HTTP:8080/health",
           "HealthyThreshold": "50",
           "UnhealthyThreshold": "2",
-          "Interval": "60",
+          "Interval": "50",
           "Timeout": "30"
         },
         "ConnectionSettings": {
