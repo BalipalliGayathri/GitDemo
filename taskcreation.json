@@ -307,7 +307,7 @@
           "Timeout": "10"
         },
         "ConnectionSettings": {
-          "IdleTimeout": 7200
+          "IdleTimeout": 4000
         }
       }
     },
