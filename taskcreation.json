@@ -304,7 +304,7 @@
           "HealthyThreshold": "10",
           "UnhealthyThreshold": "2",
           "Interval": "30",
-          "Timeout": "10"
+          "Timeout": "20"
         },
         "ConnectionSettings": {
           "IdleTimeout": 4000
