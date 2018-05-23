@@ -880,22 +880,6 @@
                 "Value": { "Ref": "CustomResourcesQueue" }
               },
               {
-                "Name": "EMPIRE_GITHUB_CLIENT_ID",
-                "Value": { "Ref": "GitHubClientId" }
-              },
-              {
-                "Name": "EMPIRE_GITHUB_CLIENT_SECRET",
-                "Value": { "Ref": "GitHubClientSecret" }
-              },
-              {
-                "Name": "EMPIRE_GITHUB_ORGANIZATION",
-                "Value": { "Ref": "GitHubOrganization" }
-              },
-              {
-                "Name": "EMPIRE_GITHUB_TEAM_ID",
-                "Value": { "Ref": "GitHubTeamId" }
-              },
-              {
                 "Name": "EMPIRE_X_SHOW_ATTACHED",
                 "Value": "true"
               },
