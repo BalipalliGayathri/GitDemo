@@ -301,10 +301,10 @@
         ],
         "HealthCheck": {
           "Target": "HTTP:8080/health",
-          "HealthyThreshold": "30",
+          "HealthyThreshold": "50",
           "UnhealthyThreshold": "2",
           "Interval": "60",
-          "Timeout": "20"
+          "Timeout": "30"
         },
         "ConnectionSettings": {
           "IdleTimeout": 4000
