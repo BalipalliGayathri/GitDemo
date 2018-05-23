@@ -727,10 +727,6 @@
                 "Value": "demo"
               },
               {
-                "Name": "EMPIRE_DATABASE_URL",
-                "Value": { "Fn::Join": ["", ["postgres://empire:epoo9mohNg@", { "Fn::GetAtt": ["DB", "Endpoint.Address"] }, ":", { "Fn::GetAtt": ["DB", "Endpoint.Port"] } , "/empire"]] }
-              },
-              {
                 "Name": "EMPIRE_S3_TEMPLATE_BUCKET",
                 "Value": { "Ref": "TemplateBucket" }
               },
@@ -800,22 +796,6 @@
               {
                 "Name": "EMPIRE_CUSTOM_RESOURCES_QUEUE",
                 "Value": { "Ref": "CustomResourcesQueue" }
-              },
-              {
-                "Name": "EMPIRE_GITHUB_CLIENT_ID",
-                "Value": { "Ref": "GitHubClientId" }
-              },
-              {
-                "Name": "EMPIRE_GITHUB_CLIENT_SECRET",
-                "Value": { "Ref": "GitHubClientSecret" }
-              },
-              {
-                "Name": "EMPIRE_GITHUB_ORGANIZATION",
-                "Value": { "Ref": "GitHubOrganization" }
-              },
-              {
-                "Name": "EMPIRE_GITHUB_TEAM_ID",
-                "Value": { "Ref": "GitHubTeamId" }
               },
               {
                 "Name": "EMPIRE_X_SHOW_ATTACHED",
