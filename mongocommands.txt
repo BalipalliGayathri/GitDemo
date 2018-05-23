@@ -1,0 +1,19 @@
+db.createUser({user: "clustergayathri",pwd: "cluster",roles: []}) 
+
+db.createRole({role: "foobarRole",privileges: [{ resource: { db: "clusterdb", collection: "c1" }, actions: ["find", "insert", "update" ] }],roles: []}) 
+
+db.grantRolesToUser("cluster",[{ role: "foobarRole", db: "clusterdb" }]) 
+
+db.getLastError()
+
+db.serverStatus()
+
+db.stats()  or  db.<collectionname>.stats()
+
+db.user.find()
+
+db.system.user.find()
+
+
+
+
